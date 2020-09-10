@@ -1,0 +1,189 @@
+$red: #FF4E50
+$gray: #666666
+$montserrat: 'Montserrat', sans-serif
+$roboto: 'Roboto', sans-serif
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: $montserrat
+    color: white
+ul
+    list-style: none
+a
+    text-decoration: none
+    color: white
+.button
+    background-color: #FF4E50
+.button.big
+    font-size: 14px
+    padding: 0.5rem 3rem
+    border-radius: 1.5rem
+    font-weight: bold
+.button.small
+    text-transform: uppercase
+    font-size: 10px
+    font-family: $montserrat
+    padding: 0.3rem 1.3rem
+    border-radius: 11px
+img
+    max-width: 330px
+    max-height: 72px
+header
+    background-image: url('images/header.png')
+    background-position: center
+    background-size: cover
+    text-align: center
+    padding: 20px
+    padding-bottom: 10rem
+    ul
+        display: flex
+        justify-content: center
+        li a
+            padding: 1rem
+            font-size: 14px
+            font-weight: bold
+            padding: 1rem 2rem
+            border: 2px solid transparent
+            &:hover
+                border: 2px solid white
+                border-radius: 2rem
+    h3
+        font-size: 20px
+        font-weight: bold
+        margin-top: 5rem
+        text-transform: uppercase
+    h2
+        text-transform: uppercase
+        font-size: 30px
+        font-weight: bold
+        margin-top: 2rem
+    p
+        font-family: $roboto
+        width: 80%
+        margin: auto
+        margin-bottom: 2rem
+
+main
+    padding: 1rem
+    margin: auto
+    h2
+        color: black
+        font-size: 22px
+        font-weight: bold
+        text-align: center
+    div
+        article
+            padding: 2rem
+            padding-top: 8rem
+            border-radius: 5px
+            margin-bottom: 1rem
+            h3
+                font-size: 24px
+                font-weight: bold
+                margin: 2rem 0
+            p
+                font-family: $roboto
+                font-size: 14px
+                font-weight: lighter
+        #article1
+            background-image: url('images/step1desk.png')
+            background-position: center
+            background-size: cover
+        #article2
+            background-image: url('images/step2desk.png')
+            background-position: center
+            background-size: cover
+        #article3
+            background-image: url('images/step3desk.png')
+            background-position: center
+            background-size: cover
+    section
+        text-align: center
+        h2
+            font-size: 22px
+            font-weight: bold
+            margin: 0.5rem
+        p
+            font-size: 18px
+            font-family: $roboto
+            color: black
+            text-align: center
+            margin: 0.5rem
+        input
+            width: 90%
+            font-size: 14px
+            padding: 1rem
+            margin : 1rem auto
+hr
+    border: none
+    margin: 2rem 0rem
+    color: $red
+    height: 0.3rem
+    background-color: $red
+
+footer
+    text-align: center
+    ul
+        li
+            ul
+                display: flex
+                padding: 1rem 3rem
+                justify-content: space-between
+
+            h2
+                color: $red
+                font-weight: bold
+                font-size: 16px
+            a
+                color: $gray
+        h3
+            font-size: 14px
+            color: black
+            margin-top: .7rem
+
+@media screen and (min-width:768px)
+    header
+        nav
+            margin-bottom: 7rem
+            display: flex
+            justify-content: space-between
+            flex-direction: row-reverse
+            h3
+                margin: 0rem 1rem
+    main
+        padding: 0rem
+        div
+            margin: auto
+            display: flex
+            justify-content: center
+            max-width: 940px
+            article
+                width: 30%
+                margin: 0.5rem
+        h2
+            margin-top: 4rem
+            margin-bottom: 2rem
+        section
+            input
+                width: 30%
+                padding: 0.5rem
+    footer
+        max-width: 940px
+        margin: auto
+        ul
+            display: flex
+            justify-content: space-between
+            margin: 1rem
+            li
+                text-align: left
+                ul
+                    flex-direction: column
+                    padding-left: 0
+                    margin-left: 0
+                h3
+                    padding-left: 0
+                    margin-left: 0

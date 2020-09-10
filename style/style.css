@@ -1,0 +1,281 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  background-color: #FF4E50;
+}
+
+.button.big {
+  font-size: 14px;
+  padding: 0.5rem 3rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+}
+
+.button.small {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.3rem 1.3rem;
+  border-radius: 11px;
+}
+
+img {
+  max-width: 330px;
+  max-height: 72px;
+}
+
+header {
+  background-image: url("images/header.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 10rem;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header ul li a {
+  padding: 1rem;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 2px solid transparent;
+}
+
+header ul li a:hover {
+  border: 2px solid white;
+  border-radius: 2rem;
+}
+
+header h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5rem;
+  text-transform: uppercase;
+}
+
+header h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+header p {
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+main {
+  padding: 1rem;
+  margin: auto;
+}
+
+main h2 {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main div article {
+  padding: 2rem;
+  padding-top: 8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+main div article h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+main div article p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+main div #article1 {
+  background-image: url("images/step1desk.png");
+  background-position: center;
+  background-size: cover;
+}
+
+main div #article2 {
+  background-image: url("images/step2desk.png");
+  background-position: center;
+  background-size: cover;
+}
+
+main div #article3 {
+  background-image: url("images/step3desk.png");
+  background-position: center;
+  background-size: cover;
+}
+
+main section {
+  text-align: center;
+}
+
+main section h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+main section p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+main section input {
+  width: 90%;
+  font-size: 14px;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+hr {
+  border: none;
+  margin: 2rem 0rem;
+  color: #FF4E50;
+  height: 0.3rem;
+  background-color: #FF4E50;
+}
+
+footer {
+  text-align: center;
+}
+
+footer ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul li h2 {
+  color: #FF4E50;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+footer ul li a {
+  color: #666666;
+}
+
+footer ul h3 {
+  font-size: 14px;
+  color: black;
+  margin-top: .7rem;
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    margin-bottom: 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  header nav h3 {
+    margin: 0rem 1rem;
+  }
+  main {
+    padding: 0rem;
+  }
+  main div {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 940px;
+  }
+  main div article {
+    width: 30%;
+    margin: 0.5rem;
+  }
+  main h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  main section input {
+    width: 30%;
+    padding: 0.5rem;
+  }
+  footer {
+    max-width: 940px;
+    margin: auto;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1rem;
+  }
+  footer ul li {
+    text-align: left;
+  }
+  footer ul li ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  footer ul li h3 {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
